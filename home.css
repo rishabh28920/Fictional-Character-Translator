@@ -48,30 +48,38 @@ body {
   -moz-animation: 2s ease-out 0s normal none infinite opacity;
   -o-animation: 2s ease-out 0s normal none infinite opacity;
 }
+
+@media (max-width: 767px) {
+  .welcome {
+    font-size: 25px; /* Adjust the font size for better mobile readability */
+    /* line-height: 10px; Adjust the line height accordingly */
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    /* margin-top: -15px;
+    margin-left: -120px; */
+  }
+
+  .welcome:before,
+  .welcome:after {
+    font-size: 40px; /* Adjust the font size for better mobile readability */
+  }
+
+  .welcome:before {
+    left: -15px;
+  }
+
+  .welcome:after {
+    right: -15px;
+  }
+}
+
+
 .visible {
   float: left;
   font-weight: 600;
   overflow: hidden;
   height: 64px;
-}
-.welcome p {
-  display: inline;
-  float: left;
-  margin: 0;
-}
-.welcome ul {
-  margin-top: 0;
-  padding-left: 284px;
-  text-align: left;
-  list-style: none;
-  animation: 6s linear 0s normal none infinite change;
-  -webkit-animation: 6s linear 0s normal none infinite change;
-  -moz-animation: 6s linear 0s normal none infinite change;
-  -o-animation: 6s linear 0s normal none infinite change;
-}
-.welcome ul li {
-  line-height: 64px;
-  margin: 0;
 }
 @-webkit-keyframes opacity {
   0% {
@@ -177,11 +185,6 @@ body {
     font-size: larger;
 }
 
-/* .btn{
-    border-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-  } */
 
   .butt {
     cursor: pointer;
@@ -192,10 +195,40 @@ body {
     width: 200px;
     color: white;
     font-size: 1.5em;   
-  box-shadow: 0px 8px 8px -4px aquamarine; */
+  box-shadow: 0px 8px 8px -4px aquamarine; 
  
 }
 
 .butt:hover{
     transform: scale(1.4);
+}
+
+@media (max-width: 767px) {
+  .vertical-center {
+    top: 50%; /* Adjust the top position for better centering */
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Default styling for larger screens */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-right: 15px; /* Adjust the spacing between items */
+}
+
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: row !important; 
+  }
+
+  .nav-item {
+    margin-right: 0 !important; 
+  }
 }

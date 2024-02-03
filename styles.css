@@ -282,6 +282,27 @@ h1::after{
   }
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-right: 15px; /* Adjust the spacing between items */
+}
+
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: row !important; 
+  }
+
+  .nav-item {
+    margin-right: 0 !important; 
+  }
+}
+
+
 
 
 
