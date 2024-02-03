@@ -228,6 +228,11 @@ body {
     flex-direction: row !important; 
   }
 
+  .butt{
+    width: 100px;
+    font-size: 1em;
+  }
+
   .nav-item {
     margin-right: 0 !important; 
   }
